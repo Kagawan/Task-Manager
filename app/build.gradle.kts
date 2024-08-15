@@ -39,13 +39,8 @@ dependencies {
     testImplementation("net.javacrumbs.json-unit:json-unit-assertj:3.2.2")
 }
 
-tasks.jacocoTestReport { reports { xml.required.set(true) } }
-
 tasks.test {
     useJUnitPlatform()
-    testLogging {
-        exceptionFormat = TestExceptionFormat.FULL
-        events = mutableSetOf(TestLogEvent.FAILED, TestLogEvent.PASSED, TestLogEvent.SKIPPED)
-        showStandardStreams = true
-    }
 }
+
+tasks.jacocoTestReport { reports { xml.required.set(true) } }
