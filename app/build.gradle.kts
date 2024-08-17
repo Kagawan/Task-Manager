@@ -11,7 +11,7 @@ plugins {
     id("io.freefair.lombok") version "8.6"
 }
 
-application { mainClass.set("hexlet.code.AppApplication") }
+application { mainClass.set("hexlet.code.Application") }
 
 group = "hexlet.code"
 version = "0.0.1-SNAPSHOT"
