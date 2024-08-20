@@ -1,5 +1,6 @@
 ---
 
+
 spring:
   jpa:
     show-sql: true
@@ -8,12 +9,15 @@ spring:
   output:
     ansi:
       enabled: always
-  h2:
-    console.enabled: true
-  console:
-      path: /h2-console
-      settings.trace: false
-      settings.web-allow-others: false
 
 server:
   address: 0.0.0.0
+  port: ${PORT:8080}
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+
+sentry:
+  dsn: https://dca269a881f8fc8615586281aa4ac831@o4506624210370560.ingest.sentry.io/4506624999948288
+  traces-sample-rate: 1.0

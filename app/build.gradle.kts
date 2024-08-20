@@ -35,8 +35,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-devtools")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
+    implementation("org.springframework.boot:spring-boot-starter-security")
 
     testImplementation("org.springframework.security:spring-security-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     implementation("net.datafaker:datafaker:2.0.2")
 
@@ -45,6 +48,8 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
 
     testImplementation("net.javacrumbs.json-unit:json-unit-assertj:3.2.2")
+
+    implementation("org.openapitools:jackson-databind-nullable:0.2.6")
 }
 
 tasks.test {
