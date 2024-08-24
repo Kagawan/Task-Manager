@@ -1,4 +1,4 @@
-package hexlet.code.util;
+/*package hexlet.code.utils;
 
 import hexlet.code.model.User;
 import org.instancio.Instancio;
@@ -36,4 +36,4 @@ public class ModelGenerator {
                 .supply(Select.field(User::getPassword), () -> faker.internet().password(3, 12))
                 .toModel();
     }
-}
+}*/

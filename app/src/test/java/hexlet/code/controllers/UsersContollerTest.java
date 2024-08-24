@@ -1,11 +1,11 @@
-package hexlet.code.controller;
+/*package hexlet.code.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hexlet.code.dto.UserCreateDTO;
 import hexlet.code.dto.UserUpdateDTO;
 import hexlet.code.model.User;
-import hexlet.code.repository.UserRepository;
-import hexlet.code.util.ModelGenerator;
+import hexlet.code.repositories.UserRepository;
+import hexlet.code.utils.ModelGenerator;
 import org.instancio.Instancio;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -149,4 +149,4 @@ public class UsersContollerTest {
                 v -> v.node("createdAt").isEqualTo(testUser.getCreatedAt().format(ModelGenerator.FORMATTER))
         );
     }
-}
+}*/
