@@ -1,4 +1,4 @@
-/*package hexlet.code.controllers;
+package hexlet.code.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hexlet.code.dto.AuthRequest;
@@ -51,4 +51,4 @@ class AuthenticationControllerTest {
                 .andExpect(status().isUnauthorized());
     }
 
-}*/
+}
