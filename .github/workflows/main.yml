@@ -19,8 +19,6 @@ jobs:
           gradle-version: 8.5
           arguments: build
           build-root-directory: app
-        env:
-          SENTRY_AUTH_TOKEN: ${{secrets. SENTRY_AUTH_TOKEN}}
       #- run: ./gradlew checkstyleMain
       #- run: ./gradlew test
       #- name: Publish code coverage
