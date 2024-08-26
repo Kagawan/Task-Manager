@@ -9,6 +9,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.3"
     id("com.github.ben-manes.versions") version "0.49.0"
     id("io.freefair.lombok") version "8.6"
+    id ("io.sentry.jvm.gradle") version "4.11.0"
 }
 
 application { mainClass.set("hexlet.code.AppApplication") }
@@ -47,6 +48,14 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.2.0")
     testImplementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.2.0")
+}
+
+sentry {
+    includeSourceContext = true
+
+    org = "rashid-mukatdisov"
+    projectName = "java-spring"
+    authToken = System.getenv("SENTRY_AUTH_TOKEN")
 }
 
 tasks.test {
