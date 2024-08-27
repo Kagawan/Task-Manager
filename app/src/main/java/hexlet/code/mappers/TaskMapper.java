@@ -65,7 +65,7 @@ public abstract class TaskMapper {
 
     @Named("assigneeIdToUser")
     public User assigneeIdToUser(Long id) {
-        return id == null ? null : new User();
+        return id == null ? null : new User(id);
     }
 
     @Named("labelsToLabelsIds")

@@ -11,7 +11,7 @@ import hexlet.code.repositories.LabelRepository;
 import hexlet.code.repositories.TaskRepository;
 import hexlet.code.repositories.TaskStatusRepository;
 import hexlet.code.repositories.UserRepository;
-import hexlet.code.util.ModelGenerator;
+import hexlet.code.utils.ModelGenerator;
 import org.instancio.Instancio;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
