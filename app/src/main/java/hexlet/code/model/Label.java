@@ -1,4 +1,4 @@
-/*package hexlet.code.model;
+package hexlet.code.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -42,4 +42,4 @@ public class Label implements BaseEntity {
     public Label(Long id) {
         this.id = id;
     }
-}*/
+}

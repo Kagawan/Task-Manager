@@ -1,4 +1,4 @@
-/*package hexlet.code.dto.labels;
+package hexlet.code.dto.labels;
 
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -18,4 +18,4 @@ public class LabelUpdateDTO {
     public LabelUpdateDTO(String name) {
         this.name = JsonNullable.of(name);
     }
-}*/
+}
