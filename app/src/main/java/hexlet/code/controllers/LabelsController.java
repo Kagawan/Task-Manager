@@ -1,4 +1,4 @@
-package hexlet.code.controllers;
+/*package hexlet.code.controllers;
 
 import hexlet.code.dto.labels.LabelCreateDTO;
 import hexlet.code.dto.labels.LabelDTO;
@@ -56,4 +56,4 @@ public class LabelsController {
     private void destroyById(@PathVariable Long id) {
         labelService.delete(id);
     }
-}
+}*/
