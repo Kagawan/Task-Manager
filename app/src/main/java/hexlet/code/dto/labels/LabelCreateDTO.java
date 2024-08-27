@@ -1,4 +1,4 @@
-package hexlet.code.dto.labels;
+/*package hexlet.code.dto.labels;
 
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -13,4 +13,4 @@ import lombok.Setter;
 public class LabelCreateDTO {
     @Size(min = 3, max = 1000)
     private String name;
-}
+}*/
