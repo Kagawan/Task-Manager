@@ -1,4 +1,4 @@
-/*package hexlet.code.dto.labels;
+package hexlet.code.dto.labels;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,4 +9,4 @@ public class LabelDTO {
     private Long id;
     private String name;
     private String createdAt;
-}*/
+}

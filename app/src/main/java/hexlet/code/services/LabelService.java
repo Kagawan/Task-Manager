@@ -1,4 +1,4 @@
-/*package hexlet.code.services;
+package hexlet.code.services;
 
 import hexlet.code.dto.labels.LabelCreateDTO;
 import hexlet.code.dto.labels.LabelDTO;
@@ -45,4 +45,4 @@ public class LabelService {
     public void delete(Long id) {
         repository.deleteById(id);
     }
-}*/
+}
