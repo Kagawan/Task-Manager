@@ -51,7 +51,7 @@ dependencies {
     testImplementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.2.0")
 }
 
-sentry {
+/*sentry {
     includeSourceContext = true
 
     org = "rashid-mukatdisov"
@@ -61,7 +61,7 @@ sentry {
 
 tasks.sentryBundleSourcesJava {
     enabled = System.getenv("SENTRY_AUTH_TOKEN") != null
-}
+}*/
 
 tasks.test {
     useJUnitPlatform()

@@ -1,4 +1,4 @@
-package hexlet.code.mappers;
+/*package hexlet.code.mappers;
 
 import hexlet.code.dto.tasks.TaskCreateDTO;
 import hexlet.code.dto.tasks.TaskDTO;
@@ -72,4 +72,4 @@ public abstract class TaskMapper {
     public Set<Long> labelsToLabelsIds(Set<Label> labels) {
         return labels == null ? null : labels.stream().map(Label::getId).collect(Collectors.toSet());
     }
-}
+}*/

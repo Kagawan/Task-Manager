@@ -1,4 +1,4 @@
-package hexlet.code.mappers;
+/*package hexlet.code.mappers;
 
 import hexlet.code.dto.taskStatuses.TaskStatusCreateDTO;
 import hexlet.code.dto.taskStatuses.TaskStatusDTO;
@@ -25,4 +25,4 @@ public abstract class TaskStatusMapper {
 
     public abstract void update(TaskStatusUpdateDTO dto, @MappingTarget TaskStatus model);
 
-}
+}*/
