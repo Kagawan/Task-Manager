@@ -1,8 +1,11 @@
 run-dist:
 	make -C app run-dist
 
+clean:
+	make -C app clean
+
 build:
-	make -C app build
+	make -C app clean build
 
 run:
 	make -C app run
