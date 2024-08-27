@@ -15,8 +15,8 @@ run-dist:
 	./gradlew clean installDist
 	./gradlew checkstyleMain
 	./build/install/app/bin/app
-#run:
-#	./gradlew run
+run:
+	./gradlew run
 
 test:
 	./gradlew test
