@@ -1,0 +1,34 @@
+logging:
+  level:
+    root: warn
+    #org.springframework.security: trace
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}
+    default: dev
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+  output:
+    ansi:
+      enabled: always
+  sql:
+    init:
+      mode: always
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+sentry:
+  dsn: https://f70169985f3f83f325743c3dfad8af2b@o4507842498920448.ingest.de.sentry.io/4507842511634512
+  in-app-includes: hexlet.code.app
+  traces-sample-rate: 1.0
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem

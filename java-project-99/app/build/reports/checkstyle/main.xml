@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/config/JacksonConfig.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/config/SecurityConfig.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/config/EncodersConfig.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/users/UserCreateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/users/UserUpdateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/users/UserDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/RequestParam.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/labels/LabelDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/labels/LabelCreateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/labels/LabelUpdateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/tasks/TaskCreateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/tasks/TaskUpdateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/tasks/TaskDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/tasks/TaskParamsDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/AuthRequest.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/taskStatuses/TaskStatusUpdateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/taskStatuses/TaskStatusDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/dto/taskStatuses/TaskStatusCreateDTO.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/AppApplication.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/specifications/TaskSpecification.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/services/TaskStatusService.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/services/LabelService.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/services/CustomUserDetailsService.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/services/TaskService.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/services/UserService.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/component/RsaKeyProperties.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/component/DataInitializer.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/utils/JWTUtils.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/utils/UserUtils.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/model/BaseEntity.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/model/User.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/model/Label.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/model/TaskStatus.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/model/Task.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/repositories/LabelRepository.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/repositories/UserRepository.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/repositories/TaskStatusRepository.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/repositories/TaskRepository.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/controllers/TasksController.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/controllers/TaskStatusesController.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/controllers/AuthenticationController.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/controllers/LabelsController.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/controllers/WelcomeController.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/controllers/UsersController.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/mappers/TaskStatusMapper.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/mappers/TaskMapper.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/mappers/UserMapper.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/mappers/JsonNullableMapper.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/mappers/LabelMapper.java">
+</file>
+<file name="/home/rashid/java-project-99/app/src/main/java/hexlet/code/mappers/ReferenceMapper.java">
+</file>
+</checkstyle>

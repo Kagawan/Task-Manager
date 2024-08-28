@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TasksFilterControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TasksFilterControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/hexlet.code.controllers.html">hexlet.code.controllers</a> &gt; TasksFilterControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.234s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">assigneeTest()</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">chainTest()</td>
+<td class="success">0.059s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">labelTest()</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">statusTest()</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">titleContTest()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">withoutFilterTest()</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join users a1_0 on a1_0.id=t1_0.assignee_id where 1=1 and 1=1 and t1_0.assignee_id=? and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join users a1_0 on a1_0.id=t1_0.assignee_id where 1=1 and 1=1 and t1_0.assignee_id=? and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks_labels (task_id,labels_id) values (?,?)
+Hibernate: insert into tasks_labels (task_id,labels_id) values (?,?)
+Hibernate: insert into tasks_labels (task_id,labels_id) values (?,?)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join tasks_labels l1_0 on t1_0.id=l1_0.task_id where 1=1 and 1=1 and 1=1 and l1_0.labels_id=? offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join tasks_labels l1_0 on t1_0.id=l1_0.task_id where 1=1 and 1=1 and 1=1 and l1_0.labels_id=? offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join tasks_labels l1_0 on t1_0.id=l1_0.task_id where 1=1 and 1=1 and 1=1 and l1_0.labels_id=? offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 where 1=1 and 1=1 and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join statuses t2_0 on t2_0.id=t1_0.task_status_id where 1=1 and t2_0.slug=? and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join statuses t2_0 on t2_0.id=t1_0.task_status_id where 1=1 and t2_0.slug=? and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join statuses t2_0 on t2_0.id=t1_0.task_status_id where 1=1 and t2_0.slug=? and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 where t1_0.name like ? escape '' and 1=1 and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 where t1_0.name like ? escape '' and 1=1 and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select l1_0.id,l1_0.created_at,l1_0.name from labels l1_0 where l1_0.name=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select t1_0.id,t1_0.created_at,t1_0.name,t1_0.slug from statuses t1_0 where t1_0.slug=?
+Hibernate: select t1_0.task_status_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from statuses_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.task_status_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password_digest,u1_0.updated_at from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.user_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t2_0.id,t2_0.created_at,t2_0.name,t2_0.slug from users_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join statuses t2_0 on t2_0.id=t1_1.task_status_id where t1_0.user_id=?
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.label_id,t1_1.id,a1_0.id,a1_0.created_at,a1_0.email,a1_0.first_name,a1_0.last_name,a1_0.password_digest,a1_0.updated_at,t2_0.user_id,t2_1.id,t2_1.created_at,t2_1.description,t2_1.index,t2_1.name,t2_1.task_status_id,t3_0.id,t3_0.created_at,t3_0.name,t3_0.slug,t1_1.created_at,t1_1.description,t1_1.index,t1_1.name,t1_1.task_status_id,t4_0.id,t4_0.created_at,t4_0.name,t4_0.slug from labels_tasks t1_0 join tasks t1_1 on t1_1.id=t1_0.tasks_id left join users a1_0 on a1_0.id=t1_1.assignee_id left join (users_tasks t2_0 join tasks t2_1 on t2_1.id=t2_0.tasks_id) on a1_0.id=t2_0.user_id left join statuses t3_0 on t3_0.id=t2_1.task_status_id left join statuses t4_0 on t4_0.id=t1_1.task_status_id where t1_0.label_id=?
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into tasks (assignee_id,created_at,description,index,name,task_status_id,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 where t1_0.name like ? escape '' and 1=1 and 1=1 and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join users a1_0 on a1_0.id=t1_0.assignee_id where t1_0.name like ? escape '' and 1=1 and t1_0.assignee_id=? and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join statuses t2_0 on t2_0.id=t1_0.task_status_id join users a1_0 on a1_0.id=t1_0.assignee_id where t1_0.name like ? escape '' and t2_0.slug=? and t1_0.assignee_id=? and 1=1 offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+Hibernate: insert into tasks_labels (task_id,labels_id) values (?,?)
+Hibernate: insert into tasks_labels (task_id,labels_id) values (?,?)
+Hibernate: insert into tasks_labels (task_id,labels_id) values (?,?)
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0 join statuses t2_0 on t2_0.id=t1_0.task_status_id join users a1_0 on a1_0.id=t1_0.assignee_id join tasks_labels l1_0 on t1_0.id=l1_0.task_id where t1_0.name like ? escape '' and t2_0.slug=? and t1_0.assignee_id=? and l1_0.labels_id=? offset ? rows fetch first ? rows only
+Hibernate: select t1_0.id,t1_0.assignee_id,t1_0.created_at,t1_0.description,t1_0.index,t1_0.name,t1_0.task_status_id from tasks t1_0
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 28 Aug 2024, 11:20:04</p>
+</div>
+</div>
+</body>
+</html>
