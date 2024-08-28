@@ -5,7 +5,6 @@ plugins {
     application
     checkstyle
     jacoco
-    java
     id("org.springframework.boot") version "3.1.4"
     id("io.spring.dependency-management") version "1.1.6"
     id("com.github.ben-manes.versions") version "0.49.0"
@@ -51,7 +50,7 @@ dependencies {
     testImplementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.2.0")
 }
 
-/*sentry {
+sentry {
     includeSourceContext = true
 
     org = "rashid-mukatdisov"
@@ -61,7 +60,7 @@ dependencies {
 
 tasks.sentryBundleSourcesJava {
     enabled = System.getenv("SENTRY_AUTH_TOKEN") != null
-}*/
+}
 
 tasks.test {
     useJUnitPlatform()
